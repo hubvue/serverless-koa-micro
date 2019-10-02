@@ -1,0 +1,23 @@
+service: demo-sls
+app: my-serverless
+org: hubvue
+
+provider:
+  name: aws
+  runtime: nodejs10.x
+  stage: dev
+
+functions:
+  todo:
+    handler: src/index.todo
+    events:
+      - http: ANY /todo
+      - http: ANY /todo/{param+}
+  api:
+    handler: src/index.api
+    events:
+      - http: ANY /api
+      - http: ANY /api/{param+}
+
+plugins:
+  - serverless-offline

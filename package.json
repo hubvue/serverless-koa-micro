@@ -1,0 +1,23 @@
+{
+  "name": "demo-sls",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "sls offline start --port 8080",
+    "deploy": "sls deploy",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^24.9.0",
+    "serverless-offline": "^5.11.0",
+    "supertest": "^4.0.2"
+  },
+  "dependencies": {
+    "koa": "^2.8.2",
+    "koa-router": "^7.4.0",
+    "koa-static": "^5.0.0",
+    "node-fetch": "^2.6.0",
+    "serverless-http": "^2.3.0"
+  }
+}
