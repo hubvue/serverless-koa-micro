@@ -12,12 +12,34 @@
 
 首先在全局安装 serverless
 
-> npm install serverless or npm install serverless -g
+> npm install serverless
+
+or
+
+> npm install serverless -g
 
 ### run
 
-> npm run dev or yarn dev
+> npm run dev
+
+or
+
+> yarn dev
 
 ### test
 
-> npm run test or yarn test
+> npm run test
+
+or
+
+> yarn test
+
+### deploy
+
+需要按照 serverless 官方的步骤获取到 AWS 的 key
+
+> npm run deploy
+
+or
+
+> yarn deploy
