@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "sls offline start --port 8080",
     "deploy": "sls deploy",
-    "test": "jest"
+    "test": "jest --detectopenhandles"
   },
   "devDependencies": {
     "jest": "^24.9.0",
