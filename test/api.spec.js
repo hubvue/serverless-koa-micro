@@ -5,7 +5,9 @@ describe('API', () => {
   beforeEach(() => {
     request = supertest(app.listen())
   })
-
+  afterEach(() => {
+    app.close()
+  })
   it('should get api', done => {
     request.get('/api/test').expect(200, (err, res) => {
       expect(res.body.data).toHaveLength(100)
