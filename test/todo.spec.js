@@ -5,8 +5,7 @@ describe('Todo', () => {
   let request
   let http
   beforeEach(() => {
-    http = app.listen()
-    request = supertest(http)
+    request = supertest(app)
   })
 
   it('should get todo', done => {
