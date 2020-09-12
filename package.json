@@ -25,7 +25,7 @@
     "koa": "^2.8.2",
     "koa-router": "^7.4.0",
     "koa-static": "^5.0.0",
-    "node-fetch": "^2.6.0",
+    "node-fetch": "^2.6.1",
     "serverless-http": "^2.3.0"
   }
 }
